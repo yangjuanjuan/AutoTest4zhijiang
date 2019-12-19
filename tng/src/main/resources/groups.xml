@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suite2">
+    <test name="all">
+        <classes>
+            <class name="com.yjj.tng.groups.GroupOnClass01"/>
+            <class name="com.yjj.tng.groups.GroupOnClass02"/>
+            <class name="com.yjj.tng.groups.GroupOnClass03"/>
+        </classes>
+    </test>
+    <test name="g1">
+        <groups>
+            <run>
+                <include name="g1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.yjj.tng.groups.GroupOnClass01"/>
+            <class name="com.yjj.tng.groups.GroupOnClass02"/>
+            <class name="com.yjj.tng.groups.GroupOnClass03"/>
+        </classes>
+    </test>
+</suite>

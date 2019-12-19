@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="parallelSuite" parallel="methods" thread-count="2">
+    <test name="test1">
+        <classes>
+            <class name="com.yjj.tng.parallel.ParallelTestByXml"/>
+            <class name="com.yjj.tng.parallel.Parallel2TestByXml"/>
+        </classes>
+    </test>
+<!--    <test name="test2">-->
+<!--        <classes>-->
+<!--            <class name="com.yjj.tng.parallel.ParallelTestByXml"/>-->
+<!--            <class name="com.yjj.tng.parallel.Parallel2TestByXml"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

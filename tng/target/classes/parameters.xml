@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="parameters">
+    <test name="parameter01">
+
+        <classes>
+            <parameter name="name" value="zhang shan"/>
+            <parameter name="age" value="10"/>
+            <class name="com.yjj.tng.parameter.ParameterTest"/>
+        </classes>
+    </test>
+</suite>
