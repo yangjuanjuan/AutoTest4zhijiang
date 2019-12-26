@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter5" />
-        <module name="AutoTest" />
         <module name="exreport" />
+        <module name="moco" />
         <module name="tng" />
       </profile>
     </annotationProcessing>
@@ -17,6 +17,7 @@
       <module name="Chapter5" target="1.5" />
       <module name="exreport" target="1.5" />
       <module name="extendreport" target="1.5" />
+      <module name="moco" target="8" />
       <module name="tng" target="1.5" />
     </bytecodeTargetLevel>
   </component>

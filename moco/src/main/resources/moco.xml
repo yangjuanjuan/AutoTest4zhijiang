@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="mocoDemo">
+    <test name="moco01">
+        <classes>
+            <class name="MocoGetDemo">
+                <methods>
+                    <include name="testSuccess"/>
+                    <include name="testFail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

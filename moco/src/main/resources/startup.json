@@ -1,0 +1,145 @@
+[
+  {
+    "description": "模拟一个没有参数的get请求",
+    "request": {
+      "uri": "/get_demo",
+      "method": "get"
+    },
+    "response": {
+      "text": "moco启动命令如下:java -jar moco-runner-0.12.0-standalone.jar 协议类型 -p 端口号 -c json配置文件"
+    }
+  },
+  {
+    "description": "mock一个返回cookies的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "text": "恭喜你获取到了cookies",
+      "cookies": {
+        "login": "mao",
+        "code": "10000",
+        "status": "hew"
+      }
+    }
+  },
+  {
+    "description": "模拟一个需要cookies 的get请求",
+    "request": {
+      "uri": "/get/cookie/demo",
+      "method": "get",
+      "cookies": {
+        "login": "mao"
+      }
+    },
+    "response": {
+      "text": "这是一个带cookies的请求,设置cookies时要写上域（localhost）和path(/)"
+    }
+  },
+  {
+    "description": "这个response来至一个json文件",
+    "request": {
+      "uri": "/get_file_demo",
+      "method": "get"
+    },
+    "response": {
+      "file": "response.json"
+    }
+  },
+  {
+    "description": "这是一个有参数的get",
+    "request": {
+      "uri": "/get_param_demo",
+      "method": "get",
+      "queries": {
+        "name": "test",
+        "age": "18"
+      }
+    },
+    "response": {
+      "text": "这是一个有参数的get"
+    }
+  },
+  {
+    "description": "mock一个从定向到百度的请求",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "mock一个从定向到自定义请求的请求",
+    "request": {
+      "uri": "/redirect/myself"
+    },
+    "redirectTo": "/get_demo"
+  },
+  {
+    "description": "mock一个post请求",
+    "request": {
+      "uri": "/post_demo",
+      "method": "post"
+    },
+    "response": {
+      "text": "这是我的第一个post请求"
+    }
+  },
+  {
+    "description": "mock一个带参数的post请求",
+    "request": {
+      "uri": "/pp_demo",
+      "method": "post",
+      "forms": {
+        "name": "Mac",
+        "age": "12"
+      }
+    },
+    "response": {
+      "text": "这是给带参数的post请求"
+    }
+  },
+  {
+    "description": "mock一个有cookies的Post",
+    "request": {
+      "uri": "/post/cookies",
+      "method": "post",
+      "cookies": {
+        "login": "mao"
+      },
+      "json": {
+        "name": "cookie",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": "200",
+      "json": {
+        "name": "cookie",
+        "status": "success",
+        "message": "Welcome cookie,Ha ha ha "
+      }
+    }
+  },
+  {
+    "description": "mock一个需要设置Header的Post",
+    "request": {
+      "uri": "/post/header",
+      "method": "post",
+      "headers": {
+        "Content-type": "application/json"
+      },
+      "json": {
+        "name": "header",
+        "sex": "male"
+      }
+    },
+    "response": {
+      "status": "200",
+      "json": {
+        "name": "header",
+        "status": "1"
+      }
+    }
+  }
+]

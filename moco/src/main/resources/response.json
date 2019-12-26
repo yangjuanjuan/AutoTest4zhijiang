@@ -1,0 +1,12 @@
+{
+  "status":"200",
+  "msg":"success",
+  "data": {
+    "eid": "1",
+    "name": "Moco发布会",
+    "limit": "2000",
+    "status": "true",
+    "address": "北京",
+    "start_time": "2019-6-18 10:00:00"
+  }
+}

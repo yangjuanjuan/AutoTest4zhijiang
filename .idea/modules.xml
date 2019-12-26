@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/AutoTest.iml" filepath="$PROJECT_DIR$/.idea/AutoTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter5/Chapter5.iml" filepath="$PROJECT_DIR$/Chapter5/Chapter5.iml" />
       <module fileurl="file://$PROJECT_DIR$/exreport/exreport.iml" filepath="$PROJECT_DIR$/exreport/exreport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moco/moco.iml" filepath="$PROJECT_DIR$/moco/moco.iml" />
       <module fileurl="file://$PROJECT_DIR$/tng/tng.iml" filepath="$PROJECT_DIR$/tng/tng.iml" />
     </modules>
   </component>
